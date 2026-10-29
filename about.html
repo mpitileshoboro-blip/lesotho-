@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Lesotho Tourism Attractions</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <style>
+    .about-card {
+      background-color: rgba(0, 32, 91, 0.95); /* Navy Blue Translucent Container */
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .about-card h2 {
+      color: #FFFFFF !important;
+      border-bottom: 2px solid #009A44;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    .about-card p {
+      color: #E2E8F0 !important;
+      line-height: 1.7;
+    }
+
+    .attraction-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Slide animation for images */
+    .slide { 
+      animation: slide 1s ease-out; 
+    }
+    @keyframes slide {
+      from { transform: translateX(-50px); opacity: 0; }
+      to   { transform: translateX(0);      opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slide { animation: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION MENU -->
+  <header class="main-header text-center py-4 mb-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold text-white mb-3">INSIDE THE MOUNTAIN KINGDOM</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html" class="active">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="contact.html">Contact</a> 
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main class="container my-5">
+
+    <!-- Intro Card -->
+    <div class="about-card text-center mb-5">
+      <h2 class="display-6 fw-bold">Your trusted guide to the Kingdom in the Sky.</h2>
+      <p class="lead mb-0">
+        We are a local tourism team dedicated to helping visitors experience the best of Lesotho. From carefully planned day trips to multi-day highland adventures.
+      </p>
+    </div>
+
+    <!-- Attraction 1: Afriski Mountain Resort -->
+    <div class="about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h2>AFRISKI MOUNTAIN RESORT</h2>
+          <p>Southern Africa’s premier high-altitude winter sports and outdoor adventure destination.</p>
+          <p>
+            Situated high in the Maloti Mountains at an elevation of 3,222 meters, Afriski is one of the very few ski resorts operating in Sub-Saharan Africa. During the winter months (June to August), visitors flock here for snowboarding and skiing on natural and snow-machine-dusted slopes.
+          </p>
+          <p class="mb-0">
+            In summer, the resort converts into a haven for high-altitude mountain biking, trail running, 4x4 off-roader routes, and hiking, featuring world-class alpine views and cozy mountain chalets.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=600&q=80" alt="Afriski Mountain Resort" class="attraction-img slide">
+        </div>
+      </div>
+    </div>
+
+    <!-- Attraction 2: Sehlabathebe National Park -->
+    <div class="about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h2>SEHLABATHEBE NATIONAL PARK</h2>
+          <p>Lesotho's oldest national park and a UNESCO World Heritage site of serene beauty.</p>
+          <p>
+            Located in the remote southeastern corner of Lesotho along the Drakensberg escarpment, Sehlabathebe is celebrated for its unique sandstone rock formations, natural arches, rock pools, and rare alpine flora.
+          </p>
+          <p class="mb-0">
+            A paradise for wilderness hikers, birdwatchers, and horse-riders, this park provides sanctuary to rare wildlife like the bearded vulture and the Maloti minnow.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLowpuwIvBlfhktFaSzcqgpIKw1YEF57ST-OeH9CDww&s=10" alt="Sehlabathebe National Park" class="attraction-img slide">
+        </div>
+      </div>
+    </div>
+
+    <!-- Attraction 3: Bokong Nature Reserve -->
+    <div class="about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h2>BOKONG NATURE RESERVE</h2>
+          <p>One of the highest nature reserves in Africa, perched dramatically at Mafika Lisiu Pass.</p>
+          <p>
+            Sitting at over 3,000 meters above sea level, Bokong Nature Reserve offers staggering views looking down into the Lepaqoa Valley. It is famous for its stunning visitor center perched directly over a precipice.
+          </p>
+          <p class="mb-0">
+            Highlights include guided walks to the frozen Lepaqoa Waterfall in winter, high-altitude wetlands exploration, bird watching, and scenic hikes through endemic alpine flora.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69XmVfNcUxKAYZOEhTbkVLvYbPtfREPtAEk2tCQfkbQ&s=10" class="attraction-img slide">
+        </div>
+      </div>
+    </div>
+
+    <!-- Attraction 4: Ts’ehlanyane National Park -->
+    <div class="about-card">
+      <div class="row align-items-center g-4">
+        <div class="col-md-8">
+          <h2>TS’EHLANYANE NATIONAL PARK</h2>
+          <p>Lesotho's largest national park protecting rare indigenous high-canopy indigenous forest.</p>
+          <p>
+            Tucked deep inside the Maloti Mountains at the foot of the Holomo Pass, Ts’ehlanyane guards one of Lesotho's rare remaining native woodland habitats, rich in rare bamboo groves and mountain streams.
+          </p>
+          <p class="mb-0">
+            Visitors can enjoy natural mountain swimming pools, pristine trekking trails, horse riding paths, and luxury lodging at the Maliba Mountain Lodge located deep within the park.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYd6tew--Vi8gc_mOZJ3VDIsKTibTpGBEs79_ITqPgA&s=10" class="attraction-img slide">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 mt-auto">
+    <p class="mb-0 text-white">&copy; 2026 Visit Lesotho Tourism Board. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

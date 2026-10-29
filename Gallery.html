@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Lesotho Tourism Attractions</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <style>
+    /* Gallery Image Styling */
+    .gallery-img-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      height: 280px;
+      background-color: var(--navy-blue, #00205B);
+    }
+    
+    .gallery-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    
+    .gallery-img-container:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-section-title {
+      background-color: rgba(0, 32, 91, 0.9);
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 25px;
+      border-left: 5px solid #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION MENU -->
+  <header class="main-header text-center py-4 mb-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold text-white mb-3">INSIDE THE MOUNTAIN KINGDOM</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="gallery.html" class="active">Gallery</a> |
+        <a href="contact.html">Contact</a> 
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN GALLERY CONTENT -->
+  <main class="container my-5">
+
+    <!-- Afriski Mountain Resort Section -->
+    <section class="mb-5">
+      <h2 class="gallery-section-title text-white">Afriski Mountain Resort</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzB75qBc3rrx9MNeWHTn89L_p9UnaOolAh5Xjko1oZsw&s=10" alt="Afriski Ski Slopes" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTojx-plp93UHtoY8uboZv_X9aE7x9BeMnZ_t0sGce-yw&s=10" alt="Maloti Mountains View" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sBDs7GflalBp10fvBnpav7nCMEoK0wUwDASsT4X5ug&s=10" alt="Highland Landscape" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnRxqcZLo_VCHkUCWNYtqyWkmT9EXlNM7W_n0bvgrmg&s=10" alt="Alpine Peaks" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sehlabathebe National Park Section -->
+    <section class="mb-5">
+      <h2 class="gallery-section-title text-white">Sehlabathebe National Park</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGhApLgTgscB1gZAl1dg29Xt_f7Qy0oBAvh9Hd2qcJOg&s=10" alt="Sehlabathebe Rock Formations" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLowpuwIvBlfhktFaSzcqgpIKw1YEF57ST-OeH9CDww&s=10" alt="Alpine Flora and Pools" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4s9CXf3pCeHQcnfeW41BV6NTCDeiPKVTRT2WtS_J0Rw&s=10" alt="Park Wilderness" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz8Hj3Gdo3iDEPDGqPlwtXbeRJr2xNp4qxVbukqt0a1A&s=10" alt="Drakensberg Escarpment" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bokong Nature Reserve Section -->
+    <section class="mb-5">
+      <h2 class="gallery-section-title text-white">Bokong Nature Reserve</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ69XmVfNcUxKAYZOEhTbkVLvYbPtfREPtAEk2tCQfkbQ&s=10" alt="Mafika Lisiu Pass View" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRFnzlVWzAwy6lYIlK15-nRCmmF3h7fn_v3ujyjxAI2g&s=10" alt="High Altitude Wetlands" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6IcmjeNkJySZGgPBR2HFtglWCX-urbrgxmy4Aqu_lcw&s=10" alt="Lepaqoa Valley Scenery" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLowpuwIvBlfhktFaSzcqgpIKw1YEF57ST-OeH9CDww&s=10" alt="Bokong Visitor Center Area" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ts’ehlanyane National Park Section -->
+    <section class="mb-5">
+      <h2 class="gallery-section-title text-white">Ts’ehlanyane National Park</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHYd6tew--Vi8gc_mOZJ3VDIsKTibTpGBEs79_ITqPgA&s=10" alt="Ts'ehlanyane Woodland" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcJFKZPB5FRvUjfXRUBo8R2fl4n11ztRRl4p4iT8IJvQ&s=10" alt="Mountain Streams" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDkJyxWfD5ONZIM4Lzpsk5Mk_beI5aqWU9E89jtbiug&s=10" alt="Holomo Pass Surroundings" loading="lazy">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="gallery-img-container">
+            <img src="https://drakensberghikes.com/media/com_mtree/images/listings/m/5375.jpg" alt="Maliba Lodge Surroundings" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 mt-auto">
+    <p class="mb-0 text-white">&copy; 2026 Visit Lesotho Tourism Board. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

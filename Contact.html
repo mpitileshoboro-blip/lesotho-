@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Lesotho Tourism Attractions</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <style>
+    /* Contact Form Styling matching Lesotho Flag Theme */
+    .contact-card {
+      background-color: rgba(0, 32, 91, 0.95); /* Navy Blue Translucent Card */
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .contact-card label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: .25rem;
+      color: #FFFFFF;
+    }
+
+    .contact-card input, 
+    .contact-card select {
+      width: 100%;
+      padding: .6rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+      color: #111111;
+    }
+
+    .contact-card input[aria-invalid="true"], 
+    .contact-card select[aria-invalid="true"] { 
+      border: 2px solid #ff4d4d; 
+    }
+
+    .contact-card input[aria-invalid="false"], 
+    .contact-card select[aria-invalid="false"] { 
+      border: 2px solid #2ecc71; 
+    }
+
+    .error { 
+      color: #ff6b6b; 
+      font-size: .85rem; 
+      min-height: 1.2em; 
+      margin-top: 0.2rem;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .checkbox label { 
+      display: inline; 
+      font-weight: normal; 
+      margin-bottom: 0;
+    }
+
+    .checkbox input { 
+      width: auto; 
+    }
+
+    .btn-submit {
+      background-color: #009A44;
+      color: #FFFFFF;
+      font-weight: 700;
+      border: 2px solid #FFFFFF;
+      padding: .7rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      width: 100%;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #007a36;
+      color: #FFFFFF;
+    }
+
+    #success { 
+      color: #2ecc71; 
+      font-weight: bold;
+      margin-top: 1rem; 
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION MENU -->
+  <header class="main-header text-center py-4 mb-4">
+    <div class="container">
+      <h1 class="display-5 fw-bold text-white mb-3">INSIDE THE MOUNTAIN KINGDOM</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="services.html">Services</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="contact.html" class="active">Contact</a> 
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTACT FORM CONTAINER -->
+  <main class="container my-5">
+    <div class="contact-card">
+      <h2 class="text-white text-center mb-4">Sign Up / Contact Us</h2>
+
+      <form id="signup" novalidate>
+        <div class="mb-3">
+          <label for="name">Full name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <div class="error" id="name-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <div class="error" id="email-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone">Phone number *</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+266 5812 3456" required>
+          <div class="error" id="phone-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="country">Country *</label>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option>Lesotho</option>
+            <option>South Africa</option>
+            <option>Other</option>
+          </select>
+          <div class="error" id="country-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password">Password *</label>
+          <input type="password" id="password" name="password" autocomplete="new-password" required>
+          <div class="error" id="password-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3">
+          <label for="confirm">Confirm password *</label>
+          <input type="password" id="confirm" name="confirm" autocomplete="new-password" required>
+          <div class="error" id="confirm-error" aria-live="polite"></div>
+        </div>
+
+        <div class="mb-3 checkbox">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I accept the terms *</label>
+        </div>
+        <div class="error" id="terms-error" aria-live="polite"></div>
+
+        <button type="submit" class="btn-submit mt-3">Sign Up</button>
+        <div id="success" role="status"></div>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3 mt-auto">
+    <p class="mb-0 text-white">&copy; 2026 Visit Lesotho Tourism Board. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Form Validation JavaScript -->
+  <script>
+    const form = document.getElementById('signup');
+
+    const validators = {
+      name(v) {
+        v = v.trim();
+        if (!v) return 'Name is required.';
+        if (v.length < 2) return 'Name must be at least 2 characters.';
+        if (!/^[\p{L}][\p{L}\s'.-]*$/u.test(v)) return 'Name can only contain letters, spaces, apostrophes, dots and hyphens.';
+        return '';
+      },
+      email(v) {
+        v = v.trim();
+        if (!v) return 'Email is required.';
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return 'Enter a valid email address.';
+        return '';
+      },
+      phone(v) {
+        v = v.trim();
+        if (!v) return 'Phone number is required.';
+        if (!/^\+?[\d\s()-]+$/.test(v)) return 'Use only digits, spaces, dashes, parentheses and an optional leading +.';
+        const digits = v.replace(/\D/g, '');
+        if (digits.length < 8 || digits.length > 15) return 'Phone number must have 8 to 15 digits.';
+        return '';
+      },
+      country(v) {
+        return v ? '' : 'Please select a country.';
+      },
+      password(v) {
+        if (!v) return 'Password is required.';
+        if (v.length < 8) return 'Password must be at least 8 characters.';
+        if (!/[a-z]/.test(v)) return 'Include at least one lowercase letter.';
+        if (!/[A-Z]/.test(v)) return 'Include at least one uppercase letter.';
+        if (!/\d/.test(v)) return 'Include at least one number.';
+        if (!/[^A-Za-z0-9]/.test(v)) return 'Include at least one special character.';
+        return '';
+      },
+      confirm(v) {
+        if (!v) return 'Please confirm your password.';
+        if (v !== form.password.value) return 'Passwords do not match.';
+        return '';
+      },
+      terms(_, input) {
+        return input.checked ? '' : 'You must accept the terms.';
+      }
+    };
+
+    function validateField(input) {
+      const check = validators[input.name];
+      if (!check) return true;
+      const message = check(input.value, input);
+      input.setCustomValidity(message); 
+      document.getElementById(input.id + '-error').textContent = message;
+      input.setAttribute('aria-invalid', message ? 'true' : 'false');
+      return !message;
+    }
+
+    const fields = [...form.elements].filter(el => validators[el.name]);
+
+    fields.forEach(input => {
+      input.addEventListener('blur', () => validateField(input));
+
+      const live = () => {
+        if (input.hasAttribute('aria-invalid')) validateField(input);
+        if (input.name === 'password' && form.confirm.hasAttribute('aria-invalid')) validateField(form.confirm);
+      };
+      input.addEventListener('input', live);
+      input.addEventListener('change', live);
+    });
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const results = fields.map(validateField);
+      if (results.every(Boolean)) {
+        const data = Object.fromEntries(new FormData(form));
+        delete data.password; delete data.confirm; 
+        console.log('Valid, submitting:', data);
+        document.getElementById('success').textContent = 'Thank you! Form is valid and submitted.';
+      } else {
+        fields.find(f => f.getAttribute('aria-invalid') === 'true').focus();

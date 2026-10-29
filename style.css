@@ -1,0 +1,78 @@
+:root {
+  --navy-blue: #00205B;   /* Lesotho Flag Royal Navy Blue */
+  --nature-green: #009A44; /* Lesotho Flag Nature Green */
+  --pure-white: #FFFFFF;
+}
+
+/* Page Background and Default Text Color */
+body {
+  background-color: var(--nature-green);
+  color: var(--pure-white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling (Navy Blue Top Bar) */
+.main-header {
+  background-color: var(--navy-blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Links Styling */
+.nav-links {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-links a {
+  color: var(--pure-white);
+  text-decoration: none;
+  padding: 0 8px;
+  transition: opacity 0.2s ease, text-decoration 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+/* Headings Styling */
+h1, h2, h3, h4 {
+  color: var(--pure-white) !important;
+  font-weight: 700;
+}
+
+/* Paragraphs & Text */
+p, label, span {
+  color: var(--pure-white);
+}
+
+/* Cards (Translucent Navy Blue over Nature Green background) */
+.card {
+  background-color: rgba(0, 32, 91, 0.9) !important;
+  border-radius: 12px;
+  color: var(--pure-white);
+}
+
+/* Custom Buttons */
+.btn-navy {
+  background-color: var(--navy-blue);
+  color: var(--pure-white);
+  border: 2px solid var(--pure-white);
+  font-weight: 600;
+}
+
+.btn-navy:hover {
+  background-color: #00153d;
+  color: var(--pure-white);
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--navy-blue);
+  color: var(--pure-white);
+  margin-top: auto;
+}
